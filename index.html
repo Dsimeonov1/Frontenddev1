@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<button id="themebutton">Change theme color</button> <!--theme color button-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal bio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#bio">about me</a></li>
+            <li><a href="#hobbies">hobbies</a></li>
+            <li><a href="#pics">pictures</a></li>
+        </ul>
+    </nav>
+    
+    <div id="name">
+        <h1>KSU student</h1> <!--title header and name-->
+    </div>
+
+    <div id="profile-card">
+        <img src="Man.png" alt="man holding a thumbs up" class="profile-pic">
+        <h3>Deni Simeonov</h3>
+        <p>Interactive Design student</p>
+        <p>Interests: Gaming, Drumming, Working out</p>
+    </div>
+
+    <div id="bio">
+        <h2>About me</h2>
+        <p>
+            I am currently a student at Kennesaw state unviersity majoring in Interactive Design. I am a Junior and thoroughly enjoy designing interfaces and learning about new design implimentations. 
+        </p>
+    </div>
+
+    <div id="hobbies">
+        <h2>Hobbies and interest</h2> <!--hobbies header-->
+        <ul> <!--hobbies list-->
+            <li>Drumming</li>
+            <li>Video games</li>
+            <li>Walking and running</li>
+            <li>Working out</li>
+        </ul>
+    </div>
+
+    <div id="pics">
+        <h2>Pics</h2> <!--pictures-->
+        <img src="Garden.jpg" alt="A beautiful garden from a video game"class="garden" width="500">
+        <img src="Lettuce.jpg" alt="A head of lettuce with limbs and sunglasses" class="lettuce" width="500">
+    </div>
+    <script> //javascript for button interaction
+        document.getElementById('themebutton').addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
+        });
+    </script> 
+</body>
+</html>
